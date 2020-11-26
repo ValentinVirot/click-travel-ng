@@ -14,7 +14,9 @@ export class TicketDisplayComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.ticket = window.history.state;
-    console.log(this.ticket);
+    this.activatedRoute.queryParams.subscribe((data) => {
+      this.ticket = <ITicket>data;
+      console.log(this.ticket);
+    });
   }
 }

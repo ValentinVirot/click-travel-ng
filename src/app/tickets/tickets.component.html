@@ -4,7 +4,7 @@
     <a
       *ngFor="let ticket of tickets"
       routerLink="display"
-      [state]="ticket"
+      [queryParams]="ticket"
       class="giant-button"
     >
       N°{{ ticket.number }} from {{ ticket.from }} to {{ ticket.to }}
