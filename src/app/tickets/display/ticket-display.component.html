@@ -1,0 +1,90 @@
+<div class="ticket">
+  <div class="ticket-head">
+    <div class="ticket-head-left">
+      <span class="ticket-head-title">Boarding Pass</span>
+      <span class="ticket-head-secondary">{{ ticket.class }}</span>
+    </div>
+
+    <div class="ticket-head-right">
+      <span class="ticket-head-title">Boarding Pass</span>
+      <span class="ticket-head-secondary">{{ ticket.class }}</span>
+    </div>
+  </div>
+
+  <div class="ticket-body">
+    <div class="ticket-body-left">
+      <div class="ticket-body-left-top">
+        <span class="muted">PASSENGER</span>
+        <span>{{ ticket.passenger }}</span>
+      </div>
+
+      <div class="ticket-body-left-middle">
+        <div class="ticket-body-left-middle-element">
+          <span class="muted">FLIGHT</span>
+          <span>{{ ticket.flight }}</span>
+        </div>
+
+        <div class="ticket-body-left-middle-element">
+          <span class="muted">FROM</span>
+          <span>{{ ticket.from }}</span>
+        </div>
+
+        <div class="ticket-body-left-middle-element">
+          <span class="muted">TO</span>
+          <span>{{ ticket.to }}</span>
+        </div>
+
+        <div class="ticket-body-left-middle-element">
+          <span class="muted">CLASS</span>
+          <span>{{ ticket.class }}</span>
+        </div>
+      </div>
+
+      <div class="ticket-body-left-bottom">
+        <div class="ticket-body-left-bottom-element">
+          <span class="muted">GATE</span>
+          <span>{{ ticket.gate }}</span>
+        </div>
+
+        <div class="ticket-body-left-bottom-element">
+          <span class="muted">TIME</span>
+          <span>{{ ticket.time }}</span>
+        </div>
+
+        <div class="ticket-body-left-bottom-element">
+          <span class="muted">SEAT</span>
+          <span>{{ ticket.seat }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-body-right">
+      <div class="ticket-body-right-top">
+        <span class="muted">PASSENGER</span>
+        <span>{{ ticket.passenger }}</span>
+      </div>
+
+      <div class="ticket-body-right-middle">
+        <div class="ticket-body-right-middle-element">
+          <span class="muted">GATE</span>
+          <span>{{ ticket.gate }}</span>
+        </div>
+
+        <div class="ticket-body-right-middle-element">
+          <span class="muted">TIME</span>
+          <span>{{ ticket.time }}</span>
+        </div>
+
+        <div class="ticket-body-right-middle-element">
+          <span class="muted">SEAT</span>
+          <span>{{ ticket.seat }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticket-bottom">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</div>

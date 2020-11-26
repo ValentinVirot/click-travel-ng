@@ -6,7 +6,13 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links">
-        <a routerLink="/tickets/{{dest.code}}" class="giant-button" *ngFor="let dest of destinations"> {{ dest.name }} </a>
+        <a
+          routerLink="/tickets/{{ dest.code }}"
+          class="giant-button"
+          *ngFor="let dest of destinations"
+        >
+          {{ dest.name }}
+        </a>
       </div>
     </div>
 

@@ -6,19 +6,18 @@ import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TicketsComponent } from './tickets/tickets.component';
+import { TicketDisplayComponent } from './tickets/display/ticket-display.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
     TicketsComponent,
+    TicketDisplayComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

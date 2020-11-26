@@ -11,6 +11,7 @@ import { ITicket } from '../interfaces/ITicket';
 export class TicketsComponent implements OnInit {
   destination: string;
   tickets: ITicket[];
+  title = 'Ticket list';
 
   constructor(
     private clickTravelService: ClickTravelService,

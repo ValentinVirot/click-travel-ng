@@ -1,0 +1,123 @@
+$left-width: 75%;
+$right-width: 25%;
+$background-color: #34a7dd;
+
+.ticket {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 32px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.ticket-head {
+  background-color: $background-color;
+  border-radius: 32px 32px 0px 0px;
+  color: white;
+}
+
+.ticket-head-title {
+  font-size: 18px;
+}
+
+.ticket-head-secondary {
+  font-size: 12px;
+}
+
+.ticket-head-left {
+  display: inline-block;
+  width: $left-width;
+  border-right: 1px dashed black;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  span {
+    display: block;
+  }
+}
+
+.ticket-head-right {
+  display: inline-block;
+  width: $right-width;
+  padding-left: 8px;
+
+  span {
+    display: block;
+  }
+}
+
+.ticket-body {
+  background-color: white;
+}
+
+.ticket-body-left {
+  display: inline-block;
+  width: $left-width;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-right: 1px dashed black;
+
+  span {
+    display: block;
+  }
+}
+
+.ticket-body-right {
+  display: inline-block;
+  width: $right-width;
+  padding: 8px;
+  span {
+    display: block;
+  }
+}
+
+.muted {
+  color: gray;
+  font-size: 12px;
+}
+
+.ticket-body-left-middle {
+  margin-top: 16px;
+}
+
+.ticket-body-left-middle-element {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.ticket-body-right-middle-element {
+  display: block;
+}
+
+.ticket-body-right-top {
+  display: block;
+}
+
+.ticket-body-left-bottom-element {
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 16px;
+}
+
+.ticket-body-left-bottom {
+  margin-top: 12px;
+}
+
+.ticket-bottom {
+  height: 24px;
+  background-color: $background-color;
+  border-radius: 0px 0px 32px 32px;
+
+  .left {
+    width: $left-width;
+    height: 24px;
+    border-right: 1px dashed black;
+  }
+
+  .right {
+    height: 24px;
+    width: $right-width;
+  }
+}

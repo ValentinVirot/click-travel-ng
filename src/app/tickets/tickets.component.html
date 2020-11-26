@@ -1,5 +1,15 @@
-<p *ngFor="let ticket of tickets">
-  {{ ticket.number }} - {{ ticket.flight }} - {{ ticket.from }} -
-  {{ ticket.to }} - {{ ticket.seat }} - {{ ticket.passenger }} -
-  {{ ticket.gate }} - {{ ticket.time }}
-</p>
+<div>
+  <h1 class="title">{{ title }}</h1>
+  <div class="links">
+    <a
+      *ngFor="let ticket of tickets"
+      routerLink="display"
+      [state]="ticket"
+      class="giant-button"
+    >
+      N°{{ ticket.number }} from {{ ticket.from }} to {{ ticket.to }}
+    </a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
