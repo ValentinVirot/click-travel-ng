@@ -6,8 +6,10 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links">
-        <a href="#" class="giant-button" *ngFor="let dest of destinations"> {{ dest.name }} </a>
+        <a routerLink="/tickets/{{dest.code}}" class="giant-button" *ngFor="let dest of destinations"> {{ dest.name }} </a>
       </div>
     </div>
+
+    <router-outlet></router-outlet>
   </div>
 </div>
